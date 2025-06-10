@@ -1,9 +1,8 @@
-# Dockerfile - Image Docker pour héberger l'application avec Apache HTTP Server
-
-# Utilise l'image officielle Apache HTTP Server
+# 🐳 Use the official Apache HTTP Server base image from Docker Hub
 FROM httpd:2.4
 
-# Copie les fichiers HTML, CSS, JS dans le répertoire de base d'Apache
+# 👇 Copy all project files into Apache's default public folder
 COPY ./ /usr/local/apache2/htdocs/
 
-# Aucun autre paramètre nécessaire, le serveur servira index.html par défaut
+# ✅ No need to expose or run anything — Apache auto-runs in the base image
+# 📁 index.html will load automatically when Apache starts
