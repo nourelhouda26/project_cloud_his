@@ -1,0 +1,44 @@
+<!-- index.html - Page principale de l'application -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabbed Menu App</title>
+  <!-- Lien vers la feuille de style CSS externe -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Titre principal -->
+  <h1 class="title">☁ Cloud Services</h1>
+
+  <!-- Onglets de navigation -->
+  <div class="tabs">
+    <button class="tab" onclick="openTab('tab1')">Services</button>
+    <button class="tab" onclick="openTab('tab2')">Tools</button>
+    <button class="tab" onclick="openTab('tab3')">Support</button>
+  </div>
+
+  <!-- Contenu des onglets -->
+  <div id="tab1" class="tab-content">
+    <button onclick="simulateApi('Storage Service')">Storage</button>
+    <button onclick="simulateApi('Compute Service')">Compute</button>
+  </div>
+
+  <div id="tab2" class="tab-content">
+    <button onclick="simulateApi('Monitoring Tool')">Monitoring</button>
+    <button onclick="simulateApi('Logging Tool')">Logging</button>
+    <button onclick="simulateApi('Security Tool')">Security</button>
+  </div>
+
+  <div id="tab3" class="tab-content">
+    <button onclick="simulateApi('Contact Support')">Contact</button>
+  </div>
+
+  <!-- Barre d'état pour afficher le résultat de la simulation d'appel API -->
+  <div class="status-bar" id="status">Click a service to simulate API call...</div>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

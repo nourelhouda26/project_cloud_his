@@ -1,0 +1,79 @@
+/* style.css - Feuille de style principale */
+
+/* Style général du corps de la page */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f4f9;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Titre de la page */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Conteneur des onglets */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Boutons des onglets */
+.tab {
+  padding: 1rem 2rem;
+  border: none;
+  background: #0077ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Effet au survol d'un onglet */
+.tab:hover {
+  transform: scale(1.05);
+}
+
+/* Contenu d'un onglet */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Boutons dans le contenu des onglets */
+.tab-content button {
+  margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Effet au survol d'un bouton */
+.tab-content button:hover {
+  background: #45a049;
+}
+
+/* Barre d'état pour afficher le message de l'appel API */
+.status-bar {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
