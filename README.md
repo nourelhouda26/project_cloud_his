@@ -1,49 +1,27 @@
 # Tabbed Menu Web Application
 
-## 📋 Description
+## 📌 Description
 
-Cette application Web présente un menu à onglets avec des boutons pour chaque service. Lorsqu'on clique sur un bouton, une simulation d'appel REST API s'affiche dans une barre d'état.
-
-## 🚀 Technologies utilisées
-
-- HTML (structure)
-- CSS (design)
-- JavaScript (fonctionnalités)
-- Apache httpd (hébergement via Docker)
-
-## 📂 Contenu
-
-- `index.html` : Page principale.
-- `style.css` : Feuille de style.
-- `script.js` : Fonctions JS.
-- `Dockerfile` : Pour lancer le projet dans un conteneur Apache.
-
-## 🐳 Exécution avec Docker
-
-### 1. Construire l'image Docker
-
-```bash
-docker build -t tabbed-menu-app .
-```
-
-### 2. Lancer le conteneur
-
-```bash
-docker run -d -p 8080:80 tabbed-menu-app
-```
-
-### 3. Accéder à l'application
-
-Ouvrez dans votre navigateur :
-```
-http://localhost:8080
-```
-
-## 🔗 Liens à fournir
-
-- Lien du dépôt GitHub : `https://github.com/<ton-utilisateur>/<nom-du-repo>`
-- Lien DockerHub : `https://hub.docker.com/r/<ton-utilisateur>/<nom-de-limage>`
+This is a simple **tabbed menu web application** built using HTML, CSS, and JavaScript.  
+Each tab contains menu buttons that simulate REST API calls and display feedback in a status bar.  
+The app is containerized with **Docker** using the **Apache httpd** server.
 
 ---
 
-Réalisé dans le cadre du projet de développement Web Front-end.
+## 🚀 Features
+
+- Tabbed layout using plain HTML/CSS
+- JavaScript-based simulated API responses
+- Organized in separate files: HTML, CSS, JS
+- Fully containerized using Docker
+- Hosted with Apache httpd server
+
+---
+
+## 🛠️ How to Run with Docker
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/nourelhouda26/project_cloud_his.git
+cd project_cloud_his
